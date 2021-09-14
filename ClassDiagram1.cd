@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Practic2020.GameCore.Game">
+    <Position X="3.25" Y="8" Width="1.5" />
+    <AssociationLine Name="MorningHepening" Type="Practic2020.GameCore.MorningAction" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="11.219" />
+        <Point X="3.5" Y="16.85" />
+        <Point X="5.25" Y="16.85" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Players" Type="Practic2020.Players.Player" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="10.562" />
+        <Point X="11.5" Y="10.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAFAAQAAAAAAgACAACAAAAgkEAAAIAgAAQAAACA=</HashCode>
+      <FileName>Game\GameCore\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Log" />
+      <Property Name="RoleList" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="MorningHepening" />
+      <Property Name="Players" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Practic2020.GameCore.Happening">
+    <Position X="19.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAgAAAAAAAAAACoAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\GameCore\Happening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.GameCore.OpenUp">
+    <Position X="20.75" Y="22" Width="1.5" />
+    <InheritanceLine Type="Practic2020.GameCore.Happening" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="20.824" />
+        <Point X="20" Y="21.625" />
+        <Point X="21.5" Y="21.625" />
+        <Point X="21.5" Y="22" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAIAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Game\GameCore\Happening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.GameCore.Shame">
+    <Position X="17.5" Y="22" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAoAAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Game\GameCore\Happening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.GameCore.Log">
+    <Position X="5.25" Y="11.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Practic2020.GameCore.Log.ShowMassage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game\GameCore\Log.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAgAAAABACAAAAAgAAAAAAAAACAAQAAAggAAA=</HashCode>
+      <FileName>Game\GameCore\Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.GameCore.MorningAction">
+    <Position X="5.25" Y="15.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Practic2020.GameCore.MorningAction.Action" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game\GameCore\MorningAction.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Game\GameCore\MorningAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.GameCore.RoleCounter">
+    <Position X="8.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAAAAAAgAABAAEAEAAAAAAAgAAAAABQAAAAAAAQA=</HashCode>
+      <FileName>Game\GameCore\RoleCounter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Role" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="RoleMembers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Practic2020.GameCore.RoleList">
+    <Position X="6" Y="7" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Practic2020.GameCore.RoleList.RoleFillter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game\GameCore\RoleList.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAABAAiAAAAAABAAAAAAAAAAgAIAAAAAI=</HashCode>
+      <FileName>Game\GameCore\RoleList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="List" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Practic2020.GameCore.VoteCounter">
+    <Position X="26.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAQAAAAI=</HashCode>
+      <FileName>Game\GameCore\Vote.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Practic2020.GameCore.Vote">
+    <Position X="23.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAQAAAAAAAAAAAAAAQAABgAAAAAAAAIEAgAAAA=</HashCode>
+      <FileName>Game\GameCore\Vote.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Votes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Practic2020.GameCore.MurderVote">
+    <Position X="22.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Game\GameCore\Vote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.Players.Player">
+    <Position X="11.5" Y="9.5" Width="1.5" />
+    <AssociationLine Name="Memory" Type="Practic2020.Players.Memory" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13" Y="13.803" />
+        <Point X="14.219" Y="13.803" />
+        <Point X="14.219" Y="15.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAIEAhAIMCEAAAQAQAAIkQJAIAAgIAAABAAQA=</HashCode>
+      <FileName>Game\Players\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Memory" />
+      <Property Name="Role" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Practic2020.Roles.Role">
+    <Position X="15" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAggAgAAAAAAAQCAAgACAAAAAAAAAAAAiA=</HashCode>
+      <FileName>Game\Roles\Role.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Side" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Practic2020.Roles.Peacfool">
+    <Position X="14.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Roles\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.Roles.ComandRole">
+    <Position X="19.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAACAAAAAAAAAABAAA=</HashCode>
+      <FileName>Game\Roles\ComandRole.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Vote" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Practic2020.Roles.Mafia">
+    <Position X="19.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Roles\ComandRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.Roles.MafiaVote">
+    <Position X="25.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Game\Roles\ComandRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.Roles.SoloRole">
+    <Position X="16.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Roles\SoloRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.Roles.Detective">
+    <Position X="17.5" Y="13" Width="1.5" />
+    <InheritanceLine Type="Practic2020.Roles.SoloRole" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="11.983" />
+        <Point X="17.25" Y="12.625" />
+        <Point X="18.188" Y="12.625" />
+        <Point X="18.188" Y="13" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Roles\SoloRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.Roles.Manaic">
+    <Position X="15.5" Y="13" Width="1.5" />
+    <InheritanceLine Type="Practic2020.Roles.SoloRole" FixedToPoint="true">
+      <Path>
+        <Point X="17.25" Y="11.983" />
+        <Point X="17.25" Y="12.625" />
+        <Point X="16.25" Y="12.625" />
+        <Point X="16.25" Y="13" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Roles\SoloRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Practic2020.Players.Guess" BaseTypeListCollapsed="true">
+    <Position X="20.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQhAQAEAAAAAAIAAAEAAQIAAAAAQAAAAA=</HashCode>
+      <FileName>Game\Players\Memory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Practic2020.Players.Opinion">
+    <Position X="16.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAIACAhAAAAAAAAABAAAAAAAAQgAAAA=</HashCode>
+      <FileName>Game\Players\Memory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Guesses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Practic2020.Players.Memory">
+    <Position X="14" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAgAAACAAACAACAAgAAAgAAAABAAAAASA=</HashCode>
+      <FileName>Game\Players\Memory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Clues" />
+      <Property Name="Opinions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Practic2020.Players.Clue" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAgAQAEEAAAAAAAAQAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Game\Players\Memory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Happenings" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="Practic2020.GameCore.AddPlayerMode">
+    <Position X="1" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAgAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\GameCore\Game.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Practic2020.Roles.Side">
+    <Position X="18.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAAAAAAIgAAAAAAAAAAAAAAAQAACAAAABAAAAA=</HashCode>
+      <FileName>Game\Roles\Role.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Practic2020.Players.BestVersion">
+    <Position X="11.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Players\Memory.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Practic2020.Players.RoleFilter">
+    <Position X="11.5" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Players\Memory.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Practic2020.Players.GuessFilter">
+    <Position X="11.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Players\Memory.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Practic2020.Players.PlayerFilter">
+    <Position X="11.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game\Players\Memory.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
