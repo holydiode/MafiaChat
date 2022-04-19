@@ -35,6 +35,7 @@ namespace Practic2020.Roles
     }
     /// <summary>
     /// Роль мфии
+    /// <img src="https://media.istockphoto.com/photos/noir-movie-character-picture-id837345268?k=20&m=837345268&s=612x612&w=0&h=1tahuBSTIUCUbVcZhaxHMV5iLm-W1c_UBlz7VBAcNrc=" />
     /// </summary>
     class Mafia : ComandRole
     {
@@ -73,7 +74,7 @@ namespace Practic2020.Roles
 
             while (true)
             {
-                if (random.NextDouble() - (float)(50 + player.Smart) / 100 < 0)
+                if (random.NextDouble() - (float)(50 + player.Intelegence) / 100 < 0)
                 {
                     return guesses[current].Player;
                 }

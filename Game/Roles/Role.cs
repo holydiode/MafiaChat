@@ -27,7 +27,11 @@ namespace Practic2020.Roles
     {
         /// <summary>
         /// являеться ли роль сркытой
+        /// 
+
+        /// 
         /// </summary>
+
         public bool IsHiden{ get; set; }
         /// <summary>
         /// Сторана конфликта к которой пренадлежит игрок
@@ -43,7 +47,7 @@ namespace Practic2020.Roles
         public Game Game { get; protected set; }
 
         /// <summary>
-        /// условие победы для роли
+        /// выполнение условия победы для роли
         /// </summary>
         /// <returns></returns>
         public virtual bool WinCondition()
@@ -128,5 +132,6 @@ namespace Practic2020.Roles
             this.Side = Side.Peacful;
             this.IsHiden = false;
         }
+
     }
 }

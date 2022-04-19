@@ -1,0 +1,14 @@
+digraph "Иерархия классов. Графический вид."
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18 [label="IComparable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Practic2020.GameCore.Vote\lCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_game_core_1_1_vote_counter.html",tooltip="класс счётчик - считает количество голосов отданых за каждую роль."];
+  Node18 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="Practic2020.Players.Clue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_players_1_1_clue.html",tooltip="Воспоминия о событиях в игре"];
+  Node18 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Practic2020.Players.Guess",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_players_1_1_guess.html",tooltip="догадка - упрощённая модель базового суждения игрока. Содержит информацию о том с какой вероятностью ..."];
+}

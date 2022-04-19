@@ -31,7 +31,7 @@ namespace MafiaGraphik
             label26.Text = Player.Attac.ToString();
             label27.Text = Player.Protect.ToString();
             label28.Text = Player.MemoryAbility.ToString();
-            label29.Text = Player.Smart.ToString();
+            label29.Text = Player.Intelegence.ToString();
             label30.Text = Player.Skepticizm.ToString();
             label31.Text = Player.Agression.ToString();
 

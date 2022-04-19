@@ -161,7 +161,9 @@ namespace Practic2020.GameCore
             Name = name;
         }
         /// <summary>
-        /// Получение голосования, игроком выбираеться другой игрок наиболее вероятно имеющий противоположную сторону  
+        /// Получение голосования, игроком выбираеться другой игрок наиболее вероятно имеющий противоположную сторону
+        /// Формула для вероятности для n-ой догадки \f$(x_1, x_2)
+        /// \sqrt{x_2, x_1}
         /// </summary>
         /// <param name="player"></param>
         /// <returns></returns>
@@ -169,16 +171,25 @@ namespace Practic2020.GameCore
         {
             Random random = new Random();
             List<Guess> guesses = player.Memory.TakeListVersion(roleFilter: a => !a.IsFriend(player.Role));
-            guesses = guesses.OrderBy(a => a.Chance * -1).ToList();
-
+            guesses = guesses.OrderByDescending(a => a.Chance).ToList();
             int current = 0;
+
 
             while (true)
             {
-                if(random.NextDouble() - (float)(50 + player.Smart) / 100 < 0)
+                if(random.NextDouble() - (float)(50 + player.Intelegence) / 100 < 0)
                 {
-                    var boop = guesses.Where(a => a.Chance == guesses[current].Chance).ToList();
-                    return boop[random.Next(boop.Count)].Player;
+                    //В данной ситуации генерируется два случайных события
+                    //Первое необходима для того, чтобы определить насколько надежную, догадку выберет игрок.
+                    //Второе необхаддимо для того, чтобы среди равновероятных догадок выбрать произвольную
+                    //Второе события необходимо, чтобы все игроки не выбирали самого первого в списке игрока
+                    //
+                    //В тероии вместо этого можно использоавть нестабильные сортировки, чтобы равнозначные данные перемешиывались.
+                    //Однако на практике, данные все еще достаточно отсортированны, чтобы считать выбор игрка не случайным.
+
+
+                    var bestGuesses = guesses.Where(a => a.Chance == guesses[current].Chance).ToList();
+                    return bestGuesses[random.Next(bestGuesses.Count)].Player;
                 }
                 else
                 {

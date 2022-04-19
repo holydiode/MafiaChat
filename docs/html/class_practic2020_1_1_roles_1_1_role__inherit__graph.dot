@@ -1,0 +1,19 @@
+digraph "Practic2020.Roles.Role"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Practic2020.Roles.Role",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Абстрактный класс роли, задающий способ обращения с ролями в модели игры"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Practic2020.Roles.ComandRole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_roles_1_1_comand_role.html",tooltip="Класс командной роли расширяет возможности обычной роли, добавляя возможность организации локальных г..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Practic2020.Roles.Mafia",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_roles_1_1_mafia.html",tooltip="Роль мфии"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Practic2020.Roles.Peacfool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_roles_1_1_peacfool.html",tooltip="роль мирного игрока"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Practic2020.Roles.SoloRole",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_roles_1_1_solo_role.html",tooltip="Класс одиночной роли расширяет возможности стандартной роли, добавляя дополнительное действие ночью"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Practic2020.Roles.Detective",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_roles_1_1_detective.html",tooltip="роль детектива"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Practic2020.Roles.Manaic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_practic2020_1_1_roles_1_1_manaic.html",tooltip="Роль маньяка"];
+}

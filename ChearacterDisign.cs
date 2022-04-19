@@ -43,7 +43,7 @@ namespace MafiaGraphik
             Player.Attac= trackBar5.Value;
             Player.Protect = trackBar6.Value;
             Player.MemoryAbility = trackBar7.Value;
-            Player.Smart = trackBar8.Value;
+            Player.Intelegence = trackBar8.Value;
             Player.Skepticizm = trackBar9.Value;
             Player.Agression = trackBar10.Value;
 

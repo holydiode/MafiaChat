@@ -55,7 +55,7 @@ namespace Practic2020.Players
         /// <summary>
         /// разумность - желание своершать действие приводящие к победе
         /// </summary>
-        public int Smart { get; set; }
+        public int Intelegence { get; set; }
 
         /// <summary>
         /// память - количесство улик которые игрок может запомнить
@@ -177,9 +177,7 @@ namespace Practic2020.Players
 
             player.Agression = random.Next(50);
             player.Skepticizm = random.Next(50);
-            player.Smart = random.Next(50);
-
-
+            player.Intelegence = random.Next(50);
 
             return player;
         }
@@ -190,7 +188,7 @@ namespace Practic2020.Players
         private Happening MakeProtect()
         {
             Random random = new Random();
-            double lieChance = Role.IsHiden ? 0.5 + (float)Smart / 100 : 0.5 - (float)Smart / 100;
+            double lieChance = Role.IsHiden ? 0.5 + (float)Intelegence / 100 : 0.5 - (float)Intelegence / 100;
 
             if (lieChance > random.NextDouble())
             {
@@ -268,7 +266,7 @@ namespace Practic2020.Players
             Random random = new Random();
             List<Guess> versions = Memory.TakeListVersion(playerFilter: a => a != this);
             int numberVersion = versions.Count -1;
-            while(random.NextDouble() * 100 > 50 + this.Smart ){
+            while(random.NextDouble() * 100 > 50 + this.Intelegence ){
                 numberVersion = numberVersion - 1 < 0 ? versions.Count - 1 : numberVersion - 1;
             }
 
@@ -281,7 +279,7 @@ namespace Practic2020.Players
                 int current = 0;
                 while (true)
                 {
-                    if (random.NextDouble() - (float)(this.Smart) / 100 <= 0)
+                    if (random.NextDouble() - (float)(this.Intelegence) / 100 <= 0)
                     {
                         return this.MakeAttak(versions[current]);
                     }
