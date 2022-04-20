@@ -9,9 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,35 +34,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.18 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_practic2020.html">Practic2020</a></li><li class="navelem"><a class="el" href="namespace_practic2020_1_1_players.html">Players</a></li><li class="navelem"><a class="el" href="class_practic2020_1_1_players_1_1_clue.html">Clue</a></li>  </ul>
@@ -88,8 +72,7 @@ $(function() {
 <tr class="memitem:ad24a63320ca6d9f0d19b95dfe1c2a814"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_players_1_1_clue.html#ad24a63320ca6d9f0d19b95dfe1c2a814">Clue</a> (<a class="el" href="class_practic2020_1_1_game_core_1_1_happening.html">Happening</a> happening, int important=0, int point=0, <a class="el" href="class_practic2020_1_1_players_1_1_player.html">Player</a> player=null, <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> role=null, bool exactClue=false)</td></tr>
 <tr class="memdesc:ad24a63320ca6d9f0d19b95dfe1c2a814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание новго воспоминания  <a href="class_practic2020_1_1_players_1_1_clue.html#ad24a63320ca6d9f0d19b95dfe1c2a814">Подробнее...</a><br /></td></tr>
 <tr class="separator:ad24a63320ca6d9f0d19b95dfe1c2a814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6033a3d557a533ad7b23f3568dc4e14"><td class="memItemLeft" align="right" valign="top"><a id="ae6033a3d557a533ad7b23f3568dc4e14"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CompareTo</b> (<a class="el" href="class_practic2020_1_1_players_1_1_clue.html">Clue</a> other)</td></tr>
+<tr class="memitem:ae6033a3d557a533ad7b23f3568dc4e14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_players_1_1_clue.html#ae6033a3d557a533ad7b23f3568dc4e14">CompareTo</a> (<a class="el" href="class_practic2020_1_1_players_1_1_clue.html">Clue</a> other)</td></tr>
 <tr class="separator:ae6033a3d557a533ad7b23f3568dc4e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -178,6 +161,25 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>CompareTo</b> (<a clas
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ae6033a3d557a533ad7b23f3568dc4e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6033a3d557a533ad7b23f3568dc4e14">&#9670;&nbsp;</a></span>CompareTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Practic2020.Players.Clue.CompareTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_practic2020_1_1_players_1_1_clue.html">Clue</a>&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -327,7 +329,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>CompareTo</b> (<a clas
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/Players/Memory.cs</li>
+<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/Players/<a class="el" href="_memory_8cs.html">Memory.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

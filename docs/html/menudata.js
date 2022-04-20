@@ -54,6 +54,7 @@ var menudata={children:[
 {text:"r",url:"functions.html#index_r"},
 {text:"s",url:"functions.html#index_s"},
 {text:"t",url:"functions.html#index_t"},
+{text:"u",url:"functions.html#index_u"},
 {text:"v",url:"functions.html#index_v"},
 {text:"w",url:"functions.html#index_w"},
 {text:"С",url:"functions.html#index_a0x0421"}]},
@@ -75,6 +76,8 @@ var menudata={children:[
 {text:"r",url:"functions_func.html#index_r"},
 {text:"s",url:"functions_func.html#index_s"},
 {text:"t",url:"functions_func.html#index_t"},
+{text:"u",url:"functions_func.html#index_u"},
+{text:"v",url:"functions_func.html#index_v"},
 {text:"w",url:"functions_func.html#index_w"}]},
 {text:"Свойства",url:"functions_prop.html",children:[
 {text:"a",url:"functions_prop.html#index_a"},
@@ -94,4 +97,6 @@ var menudata={children:[
 {text:"v",url:"functions_prop.html#index_v"},
 {text:"w",url:"functions_prop.html#index_w"},
 {text:"С",url:"functions_prop.html#index_a0x0421"}]},
-{text:"События",url:"functions_evnt.html"}]}]}]}
+{text:"События",url:"functions_evnt.html"}]}]},
+{text:"Файлы",url:"files.html",children:[
+{text:"Файлы",url:"files.html"}]}]}

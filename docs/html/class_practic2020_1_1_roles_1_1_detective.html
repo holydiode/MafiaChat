@@ -9,9 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,35 +34,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.18 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_practic2020.html">Practic2020</a></li><li class="navelem"><a class="el" href="namespace_practic2020_1_1_roles.html">Roles</a></li><li class="navelem"><a class="el" href="class_practic2020_1_1_roles_1_1_detective.html">Detective</a></li>  </ul>
@@ -88,6 +72,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
+<tr class="memitem:ab8364bc02b98f4de38141693a5752e58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_roles_1_1_detective.html#ab8364bc02b98f4de38141693a5752e58">Detective</a> ()</td></tr>
+<tr class="separator:ab8364bc02b98f4de38141693a5752e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c36ce7f859a063b6752189523eaeb4c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_roles_1_1_detective.html#a1c36ce7f859a063b6752189523eaeb4c">StartAbility</a> ()</td></tr>
 <tr class="memdesc:a1c36ce7f859a063b6752189523eaeb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узнать роль одного из игроков  <a href="class_practic2020_1_1_roles_1_1_detective.html#a1c36ce7f859a063b6752189523eaeb4c">Подробнее...</a><br /></td></tr>
 <tr class="separator:a1c36ce7f859a063b6752189523eaeb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,11 +94,9 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_practic2020_1_1_roles_1_1_role"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_practic2020_1_1_roles_1_1_role')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены унаследованные от <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td></tr>
-<tr class="memitem:a4018117f1d7d907abbb27aaf4e37556d inherit pub_static_methods_class_practic2020_1_1_roles_1_1_role"><td class="memItemLeft" align="right" valign="top"><a id="a4018117f1d7d907abbb27aaf4e37556d"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> a, <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> b)</td></tr>
+<tr class="memitem:a4018117f1d7d907abbb27aaf4e37556d inherit pub_static_methods_class_practic2020_1_1_roles_1_1_role"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a4018117f1d7d907abbb27aaf4e37556d">operator==</a> (<a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> a, <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> b)</td></tr>
 <tr class="separator:a4018117f1d7d907abbb27aaf4e37556d inherit pub_static_methods_class_practic2020_1_1_roles_1_1_role"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fed348f1fc34ad46d52a63a7060df3c inherit pub_static_methods_class_practic2020_1_1_roles_1_1_role"><td class="memItemLeft" align="right" valign="top"><a id="a0fed348f1fc34ad46d52a63a7060df3c"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> a, <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> b)</td></tr>
+<tr class="memitem:a0fed348f1fc34ad46d52a63a7060df3c inherit pub_static_methods_class_practic2020_1_1_roles_1_1_role"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a0fed348f1fc34ad46d52a63a7060df3c">operator!=</a> (<a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> a, <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> b)</td></tr>
 <tr class="separator:a0fed348f1fc34ad46d52a63a7060df3c inherit pub_static_methods_class_practic2020_1_1_roles_1_1_role"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_practic2020_1_1_roles_1_1_role"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_practic2020_1_1_roles_1_1_role')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td></tr>
 <tr class="memitem:a82d95a3523d80b7b14b99ca0ea4969e3 inherit pro_methods_class_practic2020_1_1_roles_1_1_role"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a82d95a3523d80b7b14b99ca0ea4969e3">AntagonistList</a> ()</td></tr>
@@ -134,7 +118,25 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>роль детектива </p>
-</div><h2 class="groupheader">Методы</h2>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ab8364bc02b98f4de38141693a5752e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8364bc02b98f4de38141693a5752e58">&#9670;&nbsp;</a></span>Detective()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Practic2020.Roles.Detective.Detective </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
 <a id="a1c36ce7f859a063b6752189523eaeb4c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c36ce7f859a063b6752189523eaeb4c">&#9670;&nbsp;</a></span>StartAbility()</h2>
 
@@ -165,7 +167,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b>
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/Roles/SoloRole.cs</li>
+<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/Roles/<a class="el" href="_solo_role_8cs.html">SoloRole.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

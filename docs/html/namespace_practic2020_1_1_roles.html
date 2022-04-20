@@ -9,9 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,35 +34,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.18 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_practic2020.html">Practic2020</a></li><li class="navelem"><a class="el" href="namespace_practic2020_1_1_roles.html">Roles</a></li>  </ul>
@@ -103,15 +87,15 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Перечисления</h2></td></tr>
 <tr class="memitem:a3045650c1978fa4e6ecc8e485b00fe6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6c">Side</a> { <br />
-&#160;&#160;<b>Peacful</b>, 
-<b>Mafia</b>, 
-<b>Maniac</b>, 
-<b>Red</b>, 
+&#160;&#160;<a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6cac576b3f7aa3c67156d0df9e9996d58e7">Side.Peacful</a>, 
+<a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6cafd6a47385be1eec1e65090a8df001393">Side.Mafia</a>, 
+<a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6ca30e3948a0d4e6387cb41077b00050e56">Side.Maniac</a>, 
+<a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6caee38e4d5dd68c4e440825018d549cb47">Side.Red</a>, 
 <br />
-&#160;&#160;<b>Blue</b>, 
-<b>Green</b>, 
-<b>Teal</b>, 
-<b>Brown</b>
+&#160;&#160;<a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6ca9594eec95be70e7b1710f730fdda33d9">Side.Blue</a>, 
+<a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6cad382816a3cbeed082c9e216e7392eed1">Side.Green</a>, 
+<a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6cae20385a2b41df1743f787ebef18222b8">Side.Teal</a>, 
+<a class="el" href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6caed63fc91500594c3086714f86b3001e4">Side.Brown</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a3045650c1978fa4e6ecc8e485b00fe6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сторона конфликта  <a href="namespace_practic2020_1_1_roles.html#a3045650c1978fa4e6ecc8e485b00fe6c">Подробнее...</a><br /></td></tr>
@@ -139,6 +123,16 @@ $(function() {
 </div><div class="memdoc">
 
 <p>Сторона конфликта </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a3045650c1978fa4e6ecc8e485b00fe6cac576b3f7aa3c67156d0df9e9996d58e7"></a>Peacful&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3045650c1978fa4e6ecc8e485b00fe6cafd6a47385be1eec1e65090a8df001393"></a>Mafia&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3045650c1978fa4e6ecc8e485b00fe6ca30e3948a0d4e6387cb41077b00050e56"></a>Maniac&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3045650c1978fa4e6ecc8e485b00fe6caee38e4d5dd68c4e440825018d549cb47"></a>Red&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3045650c1978fa4e6ecc8e485b00fe6ca9594eec95be70e7b1710f730fdda33d9"></a>Blue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3045650c1978fa4e6ecc8e485b00fe6cad382816a3cbeed082c9e216e7392eed1"></a>Green&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3045650c1978fa4e6ecc8e485b00fe6cae20385a2b41df1743f787ebef18222b8"></a>Teal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3045650c1978fa4e6ecc8e485b00fe6caed63fc91500594c3086714f86b3001e4"></a>Brown&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

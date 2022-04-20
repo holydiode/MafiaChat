@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['weight_119',['Weight',['../class_practic2020_1_1_game_core_1_1_happening.html#afa586f205a85934c68b47ee1caef5c48',1,'Practic2020::GameCore::Happening']]],
-  ['wincondition_120',['WinCondition',['../class_practic2020_1_1_roles_1_1_role.html#a5350a0c48f25df178e3bcf22331163da',1,'Practic2020::Roles::Role']]],
-  ['worckwithconsole_121',['WorckWithConsole',['../class_practic2020_1_1_game_core_1_1_log.html#a98b524c346910d72a155b991cd305af7',1,'Practic2020::GameCore::Log']]],
-  ['worckwithfile_122',['WorckWithFIle',['../class_practic2020_1_1_game_core_1_1_log.html#a1bfeaedc23e4c1e87666ec339a7cd58b',1,'Practic2020::GameCore::Log']]],
-  ['writestreang_123',['WriteStreang',['../class_practic2020_1_1_game_core_1_1_log.html#a5dbd9e0d245a75091059a9b5918a4b50',1,'Practic2020::GameCore::Log']]]
+  ['vote_147',['Vote',['../class_practic2020_1_1_game_core_1_1_vote.html',1,'Practic2020.GameCore.Vote'],['../class_practic2020_1_1_roles_1_1_comand_role.html#af7741ddf0f26d33187f7ea90a0f03b6f',1,'Practic2020.Roles.ComandRole.Vote()'],['../class_practic2020_1_1_game_core_1_1_vote.html#a2f69a13c746d18efce63b198364539ed',1,'Practic2020.GameCore.Vote.Vote()']]],
+  ['vote_2ecs_148',['Vote.cs',['../_vote_8cs.html',1,'']]],
+  ['votecounter_149',['VoteCounter',['../class_practic2020_1_1_game_core_1_1_vote_counter.html',1,'Practic2020.GameCore.VoteCounter'],['../class_practic2020_1_1_game_core_1_1_vote_counter.html#acb2d6ba1e4c0a483d9bcc6cb146b3338',1,'Practic2020.GameCore.VoteCounter.VoteCounter()']]]
 ];

@@ -9,9 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,35 +34,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.18 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_practic2020.html">Practic2020</a></li><li class="navelem"><a class="el" href="namespace_practic2020_1_1_game_core.html">GameCore</a></li><li class="navelem"><a class="el" href="class_practic2020_1_1_game_core_1_1_game.html">Game</a></li>  </ul>
@@ -76,6 +60,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
+<tr class="memitem:a5aad38679dcddef42a6c2c3d6fe5c25a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_game.html#a5aad38679dcddef42a6c2c3d6fe5c25a">Game</a> ()</td></tr>
+<tr class="separator:a5aad38679dcddef42a6c2c3d6fe5c25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33920f20a1189a9dbec8f8c657fbdae5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_game.html#a33920f20a1189a9dbec8f8c657fbdae5">StartPlay</a> ()</td></tr>
 <tr class="memdesc:a33920f20a1189a9dbec8f8c657fbdae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начать игру  <a href="class_practic2020_1_1_game_core_1_1_game.html#a33920f20a1189a9dbec8f8c657fbdae5">Подробнее...</a><br /></td></tr>
 <tr class="separator:a33920f20a1189a9dbec8f8c657fbdae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,6 +96,24 @@ $(function() {
 <tr class="memdesc:aec12ca4b0cabc3392261662cec12d3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">список ролей и их количесвто в игре  <a href="class_practic2020_1_1_game_core_1_1_game.html#aec12ca4b0cabc3392261662cec12d3b6">Подробнее...</a><br /></td></tr>
 <tr class="separator:aec12ca4b0cabc3392261662cec12d3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a5aad38679dcddef42a6c2c3d6fe5c25a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aad38679dcddef42a6c2c3d6fe5c25a">&#9670;&nbsp;</a></span>Game()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Practic2020.GameCore.Game.Game </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Методы</h2>
 <a id="ace91c962dee75d0bb7af6bc8e5bf1ec3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace91c962dee75d0bb7af6bc8e5bf1ec3">&#9670;&nbsp;</a></span>AddPlayer()</h2>
@@ -367,7 +371,7 @@ $(function() {
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/GameCore/Game.cs</li>
+<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/GameCore/<a class="el" href="_game_8cs.html">Game.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

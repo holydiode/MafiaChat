@@ -9,9 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,36 +34,16 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.18 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div class="contents">
 &#160;
 
@@ -81,6 +65,9 @@ $(function() {
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_game.html#ac1b5152894ffb5f3cc7b9eba0a9c9b1f">Practic2020.GameCore.Game</a>
 , <a class="el" href="class_practic2020_1_1_game_core_1_1_role_list.html#af9bac0871147a9f87e0e5ba139a62e28">Practic2020.GameCore.RoleList</a>
 </li>
+<li>AddVote()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_vote.html#a0f50ead059b03a8035358298d5b7d68d">Practic2020.GameCore.Vote</a>
+</li>
 <li>AntagonistList()
 : <a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a82d95a3523d80b7b14b99ca0ea4969e3">Practic2020.Roles.Role</a>
 </li>
@@ -98,6 +85,11 @@ $(function() {
 <li>Clue()
 : <a class="el" href="class_practic2020_1_1_players_1_1_clue.html#ad24a63320ca6d9f0d19b95dfe1c2a814">Practic2020.Players.Clue</a>
 </li>
+<li>CompareTo()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html#a63aeabd78f9ddb17e32acdf5d7d366c4">Practic2020.GameCore.VoteCounter</a>
+, <a class="el" href="class_practic2020_1_1_players_1_1_clue.html#ae6033a3d557a533ad7b23f3568dc4e14">Practic2020.Players.Clue</a>
+, <a class="el" href="class_practic2020_1_1_players_1_1_guess.html#a3da6e7f77462b7d4ee5b36c5fe5b9262">Practic2020.Players.Guess</a>
+</li>
 <li>ContrAttack()
 : <a class="el" href="class_practic2020_1_1_players_1_1_player.html#a177dd6ca42f1c039ad31d89394d6db29">Practic2020.Players.Player</a>
 </li>
@@ -108,18 +100,26 @@ $(function() {
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
+<li>Detective()
+: <a class="el" href="class_practic2020_1_1_roles_1_1_detective.html#ab8364bc02b98f4de38141693a5752e58">Practic2020.Roles.Detective</a>
+</li>
 <li>DisscussHapening()
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_game.html#a7f7a3d916764157a7fb72294916ede96">Practic2020.GameCore.Game</a>
 </li>
 <li>Do()
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_morning_action.html#abff9c55bc0b81845ef734aeab9dd68d9">Practic2020.GameCore.MorningAction</a>
 </li>
+<li>DoVote()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_vote.html#a198312fcf5163eacb177a82dc4481dd5">Practic2020.GameCore.Vote</a>
+</li>
 </ul>
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>Execution()
-: <a class="el" href="class_practic2020_1_1_roles_1_1_mafia_vote.html#aac9e1314496f32ad92b37aaa041e7cb4">Practic2020.Roles.MafiaVote</a>
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_murder_vote.html#a8d8049f40d9b82f8b0faef9ce5dcbda3">Practic2020.GameCore.MurderVote</a>
+, <a class="el" href="class_practic2020_1_1_game_core_1_1_vote.html#aa2855b79436cf23869ac8c65abc1a623">Practic2020.GameCore.Vote</a>
+, <a class="el" href="class_practic2020_1_1_roles_1_1_mafia_vote.html#aac9e1314496f32ad92b37aaa041e7cb4">Practic2020.Roles.MafiaVote</a>
 </li>
 <li>ExtendMaxPlayer()
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html#ad8d58755cb0cc8449b5157e61dd2f5e9">Practic2020.GameCore.RoleCounter</a>
@@ -138,11 +138,24 @@ $(function() {
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
+<li>Game()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_game.html#a5aad38679dcddef42a6c2c3d6fe5c25a">Practic2020.GameCore.Game</a>
+</li>
+<li>GetEnumerator()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_log.html#ac3db89ecb358a950f807c6a89b1b9e8f">Practic2020.GameCore.Log</a>
+, <a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html#ab2c8c2197b2d646f232c66028f8aaf7a">Practic2020.GameCore.RoleCounter</a>
+, <a class="el" href="class_practic2020_1_1_game_core_1_1_role_list.html#a58627a83ea1a2cbda6336b40d3eace1a">Practic2020.GameCore.RoleList</a>
+</li>
 <li>GetRandomPosibleRole()
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_role_list.html#ac3bb4f6ddd5dd572b2e841761e909826">Practic2020.GameCore.RoleList</a>
 </li>
 <li>GetRoleList()
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_role_list.html#aaf48d28d64ce32cdcd43ec1ac1ed4eac">Practic2020.GameCore.RoleList</a>
+</li>
+<li>GetVote()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_murder_vote.html#a30985e8a96389836ce57a30b07822558">Practic2020.GameCore.MurderVote</a>
+, <a class="el" href="class_practic2020_1_1_game_core_1_1_vote.html#a761a964c2b82e9c9c6cfd7d683258718">Practic2020.GameCore.Vote</a>
+, <a class="el" href="class_practic2020_1_1_roles_1_1_mafia_vote.html#ae0f3d718d8f1b48bba03a9d1bafac970">Practic2020.Roles.MafiaVote</a>
 </li>
 <li>Guess()
 : <a class="el" href="class_practic2020_1_1_players_1_1_guess.html#a659d22241718c3149f371024f00a0b25">Practic2020.Players.Guess</a>
@@ -200,11 +213,23 @@ $(function() {
 <li>MadeStatic()
 : <a class="el" href="class_practic2020_1_1_players_1_1_guess.html#a12f59adc893a0fdc74d04e7c287e3f86">Practic2020.Players.Guess</a>
 </li>
+<li>Mafia()
+: <a class="el" href="class_practic2020_1_1_roles_1_1_mafia.html#a6b980ea0f05ba89f577e9540391fa77b">Practic2020.Roles.Mafia</a>
+</li>
+<li>MafiaVote()
+: <a class="el" href="class_practic2020_1_1_roles_1_1_mafia_vote.html#a6c671607e92e62251df49789e6b0dfc8">Practic2020.Roles.MafiaVote</a>
+</li>
+<li>Manaic()
+: <a class="el" href="class_practic2020_1_1_roles_1_1_manaic.html#a6aa1e4799a73a8ba15ffaa18e5f5a856">Practic2020.Roles.Manaic</a>
+</li>
 <li>Memory()
 : <a class="el" href="class_practic2020_1_1_players_1_1_memory.html#adf997bd2bf5a41d7ac3eb5258111f293">Practic2020.Players.Memory</a>
 </li>
 <li>MorningAction()
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_morning_action.html#a47b125a7668dc0207933573a95403851">Practic2020.GameCore.MorningAction</a>
+</li>
+<li>MurderVote()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_murder_vote.html#aafa0c4baaa5ef40ad636e5dd389666da">Practic2020.GameCore.MurderVote</a>
 </li>
 </ul>
 
@@ -213,6 +238,12 @@ $(function() {
 <li>OpenUp()
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_open_up.html#a98b9ba5773c5e7c89ac1eefad00802ab">Practic2020.GameCore.OpenUp</a>
 </li>
+<li>operator!=()
+: <a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a0fed348f1fc34ad46d52a63a7060df3c">Practic2020.Roles.Role</a>
+</li>
+<li>operator==()
+: <a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a4018117f1d7d907abbb27aaf4e37556d">Practic2020.Roles.Role</a>
+</li>
 <li>Opinion()
 : <a class="el" href="class_practic2020_1_1_players_1_1_opinion.html#a32fa006c5fe116e249d4e13708ee6d3a">Practic2020.Players.Opinion</a>
 </li>
@@ -220,8 +251,14 @@ $(function() {
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
+<li>Peacfool()
+: <a class="el" href="class_practic2020_1_1_roles_1_1_peacfool.html#a2dd2a687e7a8aa3fe89c33cc4eba7466">Practic2020.Roles.Peacfool</a>
+</li>
 <li>Player()
 : <a class="el" href="class_practic2020_1_1_players_1_1_player.html#af69b2d0d44de05b6ed9a5f0ffe3231a0">Practic2020.Players.Player</a>
+</li>
+<li>PlayerInvoled()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_vote.html#a5d37feae32725415af35860a031c41c1">Practic2020.GameCore.Vote</a>
 </li>
 </ul>
 
@@ -240,8 +277,17 @@ $(function() {
 : <a class="el" href="class_practic2020_1_1_players_1_1_guess.html#afad1ac5e4f73f55fe1b10883c87b8143">Practic2020.Players.Guess</a>
 , <a class="el" href="class_practic2020_1_1_players_1_1_opinion.html#a71de6154995c9a145276de1a1ad5257f">Practic2020.Players.Opinion</a>
 </li>
+<li>Result()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_vote.html#aebee3190de94c836c2b12d52a0794bc6">Practic2020.GameCore.Vote</a>
+</li>
+<li>RoleCounter()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html#aef8ff0e1f280a8241f024a864a513c93">Practic2020.GameCore.RoleCounter</a>
+</li>
 <li>RoleFillter()
 : <a class="el" href="class_practic2020_1_1_game_core_1_1_role_list.html#af5e990c86226c5676783bb5aeba9ae43">Practic2020.GameCore.RoleList</a>
+</li>
+<li>RoleList()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_role_list.html#aabef34a2b42ecd9fb9505bb0ee568b5c">Practic2020.GameCore.RoleList</a>
 </li>
 </ul>
 
@@ -285,6 +331,23 @@ $(function() {
 </li>
 <li>TryToMakeHapening()
 : <a class="el" href="class_practic2020_1_1_players_1_1_player.html#a0aaa60e1d9c2c1ef5938f43fd16fea01">Practic2020.Players.Player</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>Up()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html#aab7c7adaa264e31ddef8666f76b561a2">Practic2020.GameCore.VoteCounter</a>
+</li>
+</ul>
+
+
+<h3><a id="index_v"></a>- v -</h3><ul>
+<li>Vote()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_vote.html#a2f69a13c746d18efce63b198364539ed">Practic2020.GameCore.Vote</a>
+</li>
+<li>VoteCounter()
+: <a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html#acb2d6ba1e4c0a483d9bcc6cb146b3338">Practic2020.GameCore.VoteCounter</a>
 </li>
 </ul>
 

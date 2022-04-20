@@ -9,9 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,35 +34,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.18 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_practic2020.html">Practic2020</a></li><li class="navelem"><a class="el" href="namespace_practic2020_1_1_game_core.html">GameCore</a></li><li class="navelem"><a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html">VoteCounter</a></li>  </ul>
@@ -87,11 +71,9 @@ $(function() {
 Открытые члены</h2></td></tr>
 <tr class="memitem:acb2d6ba1e4c0a483d9bcc6cb146b3338"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html#acb2d6ba1e4c0a483d9bcc6cb146b3338">VoteCounter</a> (<a class="el" href="class_practic2020_1_1_players_1_1_player.html">Player</a> player)</td></tr>
 <tr class="separator:acb2d6ba1e4c0a483d9bcc6cb146b3338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63aeabd78f9ddb17e32acdf5d7d366c4"><td class="memItemLeft" align="right" valign="top"><a id="a63aeabd78f9ddb17e32acdf5d7d366c4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>CompareTo</b> (<a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html">VoteCounter</a> voteCounter)</td></tr>
+<tr class="memitem:a63aeabd78f9ddb17e32acdf5d7d366c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html#a63aeabd78f9ddb17e32acdf5d7d366c4">CompareTo</a> (<a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html">VoteCounter</a> voteCounter)</td></tr>
 <tr class="separator:a63aeabd78f9ddb17e32acdf5d7d366c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab7c7adaa264e31ddef8666f76b561a2"><td class="memItemLeft" align="right" valign="top"><a id="aab7c7adaa264e31ddef8666f76b561a2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Up</b> (int incr=1)</td></tr>
+<tr class="memitem:aab7c7adaa264e31ddef8666f76b561a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html#aab7c7adaa264e31ddef8666f76b561a2">Up</a> (int incr=1)</td></tr>
 <tr class="separator:aab7c7adaa264e31ddef8666f76b561a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -129,6 +111,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Up</b> (int incr=1)</
 
 </div>
 </div>
+<h2 class="groupheader">Методы</h2>
+<a id="a63aeabd78f9ddb17e32acdf5d7d366c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63aeabd78f9ddb17e32acdf5d7d366c4">&#9670;&nbsp;</a></span>CompareTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Practic2020.GameCore.VoteCounter.CompareTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_practic2020_1_1_game_core_1_1_vote_counter.html">VoteCounter</a>&#160;</td>
+          <td class="paramname"><em>voteCounter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab7c7adaa264e31ddef8666f76b561a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7c7adaa264e31ddef8666f76b561a2">&#9670;&nbsp;</a></span>Up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Practic2020.GameCore.VoteCounter.Up </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>incr</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Полный список свойств</h2>
 <a id="a277a446de790c5cdbfbb397a4e5db715"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a277a446de790c5cdbfbb397a4e5db715">&#9670;&nbsp;</a></span>Player</h2>
@@ -155,7 +174,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Up</b> (int incr=1)</
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/GameCore/Vote.cs</li>
+<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/GameCore/<a class="el" href="_vote_8cs.html">Vote.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

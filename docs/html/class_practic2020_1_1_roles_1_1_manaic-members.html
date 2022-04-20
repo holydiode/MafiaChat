@@ -9,9 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,35 +34,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.18 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_practic2020.html">Practic2020</a></li><li class="navelem"><a class="el" href="namespace_practic2020_1_1_roles.html">Roles</a></li><li class="navelem"><a class="el" href="class_practic2020_1_1_roles_1_1_manaic.html">Manaic</a></li>  </ul>
@@ -77,10 +61,10 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#ac5694ffb8bb857b52a6297817506dd0e">IsFriend</a>(Role role)</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a6545a4d65cfe675b872c7bbae6d97f0c">IsHiden</a></td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a6ee49b5493aad49fac98e575e2ac9f63">LinkGame</a>(Game game)</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Manaic</b>() (определено в <a class="el" href="class_practic2020_1_1_roles_1_1_manaic.html">Practic2020.Roles.Manaic</a>)</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_manaic.html">Practic2020.Roles.Manaic</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_manaic.html#a6aa1e4799a73a8ba15ffaa18e5f5a856">Manaic</a>()</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_manaic.html">Practic2020.Roles.Manaic</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a3cc6931606f458fadf27c9a478a4f05e">Name</a></td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>operator!=</b>(Role a, Role b) (определено в <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a>)</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator==</b>(Role a, Role b) (определено в <a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a>)</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a0fed348f1fc34ad46d52a63a7060df3c">operator!=</a>(Role a, Role b)</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a4018117f1d7d907abbb27aaf4e37556d">operator==</a>(Role a, Role b)</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#abfbaab878a01e0c23bc5ee3b949f6da7">RandomReverse</a>()</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html#a807482939c5c9321959f49cc8268e3c7">Side</a></td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Practic2020.Roles.Role</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_manaic.html#ac800cc72ebcdbd57d7976dbd7205ca80">StartAbility</a>()</td><td class="entry"><a class="el" href="class_practic2020_1_1_roles_1_1_manaic.html">Practic2020.Roles.Manaic</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>

@@ -9,9 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -30,35 +34,15 @@
 </div>
 <!-- end header part -->
 <!-- Создано системой Doxygen 1.8.18 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Поиск');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_practic2020.html">Practic2020</a></li><li class="navelem"><a class="el" href="namespace_practic2020_1_1_game_core.html">GameCore</a></li><li class="navelem"><a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html">RoleCounter</a></li>  </ul>
@@ -82,8 +66,7 @@ $(function() {
 <tr class="memitem:af02d0ab7969d8e5b87b07e1f9b4c0f22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html#af02d0ab7969d8e5b87b07e1f9b4c0f22">SombodyInGame</a> ()</td></tr>
 <tr class="memdesc:af02d0ab7969d8e5b87b07e1f9b4c0f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Есть ли действующие игроки данной роли в игре  <a href="class_practic2020_1_1_game_core_1_1_role_counter.html#af02d0ab7969d8e5b87b07e1f9b4c0f22">Подробнее...</a><br /></td></tr>
 <tr class="separator:af02d0ab7969d8e5b87b07e1f9b4c0f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef8ff0e1f280a8241f024a864a513c93"><td class="memItemLeft" align="right" valign="top"><a id="aef8ff0e1f280a8241f024a864a513c93"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RoleCounter</b> (<a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> role)</td></tr>
+<tr class="memitem:aef8ff0e1f280a8241f024a864a513c93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html#aef8ff0e1f280a8241f024a864a513c93">RoleCounter</a> (<a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a> role)</td></tr>
 <tr class="separator:aef8ff0e1f280a8241f024a864a513c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d813dca39ceebff1aac94b4eba184e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html#a04d813dca39ceebff1aac94b4eba184e">ExtendRoleMembers</a> (<a class="el" href="class_practic2020_1_1_players_1_1_player.html">Player</a> player)</td></tr>
 <tr class="memdesc:a04d813dca39ceebff1aac94b4eba184e"><td class="mdescLeft">&#160;</td><td class="mdescRight">добавить нового игрока данной роли  <a href="class_practic2020_1_1_game_core_1_1_role_counter.html#a04d813dca39ceebff1aac94b4eba184e">Подробнее...</a><br /></td></tr>
@@ -94,8 +77,7 @@ $(function() {
 <tr class="memitem:adf5d9fe86adb6d8939cc10256988161f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html#adf5d9fe86adb6d8939cc10256988161f">HasPlayer</a> ()</td></tr>
 <tr class="memdesc:adf5d9fe86adb6d8939cc10256988161f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имеются ли жевые игроки данной роли  <a href="class_practic2020_1_1_game_core_1_1_role_counter.html#adf5d9fe86adb6d8939cc10256988161f">Подробнее...</a><br /></td></tr>
 <tr class="separator:adf5d9fe86adb6d8939cc10256988161f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2c8c2197b2d646f232c66028f8aaf7a"><td class="memItemLeft" align="right" valign="top"><a id="ab2c8c2197b2d646f232c66028f8aaf7a"></a>
-List&lt; <a class="el" href="class_practic2020_1_1_players_1_1_player.html">Player</a> &gt;.Enumerator&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnumerator</b> ()</td></tr>
+<tr class="memitem:ab2c8c2197b2d646f232c66028f8aaf7a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_practic2020_1_1_players_1_1_player.html">Player</a> &gt;.Enumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_practic2020_1_1_game_core_1_1_role_counter.html#ab2c8c2197b2d646f232c66028f8aaf7a">GetEnumerator</a> ()</td></tr>
 <tr class="separator:ab2c8c2197b2d646f232c66028f8aaf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -118,7 +100,26 @@ List&lt; <a class="el" href="class_practic2020_1_1_players_1_1_player.html">Play
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс счётчик объеденяющий в себе информацию о количестве свободных мест и действующих игроках для заданной роли </p>
-</div><h2 class="groupheader">Методы</h2>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="aef8ff0e1f280a8241f024a864a513c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8ff0e1f280a8241f024a864a513c93">&#9670;&nbsp;</a></span>RoleCounter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Practic2020.GameCore.RoleCounter.RoleCounter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_practic2020_1_1_roles_1_1_role.html">Role</a>&#160;</td>
+          <td class="paramname"><em>role</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
 <a id="ad8d58755cb0cc8449b5157e61dd2f5e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8d58755cb0cc8449b5157e61dd2f5e9">&#9670;&nbsp;</a></span>ExtendMaxPlayer()</h2>
 
@@ -168,6 +169,23 @@ List&lt; <a class="el" href="class_practic2020_1_1_players_1_1_player.html">Play
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab2c8c2197b2d646f232c66028f8aaf7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c8c2197b2d646f232c66028f8aaf7a">&#9670;&nbsp;</a></span>GetEnumerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_practic2020_1_1_players_1_1_player.html">Player</a>&gt;.Enumerator Practic2020.GameCore.RoleCounter.GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -332,7 +350,7 @@ List&lt; <a class="el" href="class_practic2020_1_1_players_1_1_player.html">Play
 </div>
 </div>
 <hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/GameCore/RoleCounter.cs</li>
+<li>E:/WORK_TABLE/boopa/MafiaGraphik/Game/GameCore/<a class="el" href="_role_counter_8cs.html">RoleCounter.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
